@@ -885,7 +885,7 @@ And it (the ship) rested on Mount Judi, and it was said: "Away with the people w
 (polytheists, and wrongdoing)!"
 And it was said:
 "O Noah! Come down (from the ship) with peace from Us and blessings on you and on the
-people o\who are with you(and on some of their offspring), but (there will be other) people to
+people who are with you(and on some of their offspring), but (there will be other) people to
 whom We shall grant their pleasures (for a time), but in the end a painful torment will reach
 them from Us." (Ch 11:41-48 Quran)
 With the issue of the divine command, calm returned to earth, the water retreated, and the dry

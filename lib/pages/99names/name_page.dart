@@ -25,14 +25,14 @@ class NamePage extends StatelessWidget {
           centerTitle: true,
           title: Text(
             'Asma Al-Husna',
-            style: TextStyle(color: Colors.white, fontStyle: FontStyle.italic),
+            style: TextStyle(
+                color: Colors.white, fontStyle: FontStyle.italic, fontSize: 25),
           ),
         ),
-        body: Expanded(
-            child: ListView.builder(
-                itemBuilder: (context, index) => Nametile(
-                    index: index + 1,
-                    nameArabic: names[index].arabicName,
-                    englishMeaning: names[index].englishMeaning))));
+        body: ListView.builder(
+            itemBuilder: (context, index) => Nametile(
+                index: index + 1,
+                nameArabic: names[index].arabicName,
+                englishMeaning: names[index].englishMeaning)));
   }
 }

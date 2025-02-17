@@ -3,10 +3,10 @@ import 'package:google_fonts/google_fonts.dart';
 
 class TextReuse extends StatelessWidget {
   final String text;
-  Color? color = Colors.white;
+  final Color? color;
   final double fontSize;
 
-  TextReuse(
+  const TextReuse(
       {super.key, required this.text, required this.fontSize, this.color});
 
   @override

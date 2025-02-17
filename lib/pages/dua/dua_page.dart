@@ -32,7 +32,12 @@ class _DuaPageState extends State<DuaPage> {
         ),
         title: Text(
           "Dua and Supplications ",
-          style: GoogleFonts.calligraffitti(color: Colors.amber),
+          style: GoogleFonts.gabriela(
+            color: Colors.amber,
+            fontSize: 25,
+            fontStyle: FontStyle.italic,
+            fontWeight: FontWeight.bold,
+          ),
         ),
         backgroundColor: Colors.black,
       ),

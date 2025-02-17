@@ -3,6 +3,8 @@ import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:idraaq/pages/99names/name_page.dart';
 import 'package:idraaq/pages/dua/dua_page.dart';
+import 'package:idraaq/pages/fiqh/fiqh_page.dart';
+import 'package:idraaq/pages/stories.dart/stories_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -31,8 +33,7 @@ class _HomePageState extends State<HomePage> {
             decoration: const BoxDecoration(
               image: DecorationImage(
                 fit: BoxFit.cover,
-                image: NetworkImage(
-                    'https://t3.ftcdn.net/jpg/09/32/48/16/360_F_932481634_msZ7pp16MoGIhpvqgNg47IrjofYT4X7J.jpg'),
+                image: AssetImage('assets/images/mosq.jpg'),
               ),
             ),
             child: Align(
@@ -70,7 +71,9 @@ class _HomePageState extends State<HomePage> {
                       children: [
                         InkWell(
                           onTap: () {
-                            Get.to(NamePage(), transition: Transition.zoom);
+                            Get.to(() => NamePage(),
+                                transition: Transition.cupertino,
+                                duration: Duration(milliseconds: 900));
                           },
                           child: Container(
                               height: 155,
@@ -99,7 +102,9 @@ class _HomePageState extends State<HomePage> {
                         ),
                         InkWell(
                           onTap: () {
-                            Get.to(DuaPage());
+                            Get.to(() => DuaPage(),
+                                transition: Transition.cupertino,
+                                duration: Duration(milliseconds: 900));
                           },
                           child: Container(
                               height: 155,
@@ -140,7 +145,9 @@ class _HomePageState extends State<HomePage> {
                       children: [
                         InkWell(
                           onTap: () {
-                            Get.to(NamePage());
+                            Get.to(() => FiqhPage(),
+                                transition: Transition.cupertino,
+                                duration: Duration(milliseconds: 900));
                           },
                           child: Container(
                             height: 155,
@@ -175,33 +182,40 @@ class _HomePageState extends State<HomePage> {
                             ),
                           ),
                         ),
-                        Container(
-                            height: 155,
-                            width: 180,
-                            decoration: BoxDecoration(
-                              boxShadow: [
-                                BoxShadow(
-                                    blurRadius: 10,
-                                    spreadRadius: 5,
-                                    color: const Color.fromARGB(
-                                        255, 150, 146, 146))
-                              ],
-                              borderRadius: BorderRadius.circular(15),
-                              color: Colors.yellow,
-                              image: DecorationImage(
-                                  image: AssetImage('assets/images/imam.jpg'),
-                                  fit: BoxFit.cover),
-                            ),
-                            child: Align(
-                                alignment: Alignment.bottomCenter,
-                                child: Padding(
-                                  padding: const EdgeInsets.only(left: 8.0),
-                                  child: Text(
-                                    'Stories of the Prophets',
-                                    style: TextStyle(
-                                        fontSize: 20, color: Colors.white),
-                                  ),
-                                ))),
+                        InkWell(
+                          onTap: () {
+                            Get.to(() => StoriesPage(),
+                                transition: Transition.cupertino,
+                                duration: Duration(milliseconds: 900));
+                          },
+                          child: Container(
+                              height: 155,
+                              width: 180,
+                              decoration: BoxDecoration(
+                                boxShadow: [
+                                  BoxShadow(
+                                      blurRadius: 10,
+                                      spreadRadius: 5,
+                                      color: const Color.fromARGB(
+                                          255, 150, 146, 146))
+                                ],
+                                borderRadius: BorderRadius.circular(15),
+                                color: Colors.yellow,
+                                image: DecorationImage(
+                                    image: AssetImage('assets/images/imam.jpg'),
+                                    fit: BoxFit.cover),
+                              ),
+                              child: Align(
+                                  alignment: Alignment.bottomCenter,
+                                  child: Padding(
+                                    padding: const EdgeInsets.only(left: 8.0),
+                                    child: Text(
+                                      'Stories of the Prophets',
+                                      style: TextStyle(
+                                          fontSize: 20, color: Colors.white),
+                                    ),
+                                  ))),
+                        ),
                       ],
                     ),
                   ],

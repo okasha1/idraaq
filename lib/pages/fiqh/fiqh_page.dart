@@ -29,7 +29,7 @@ class _FiqhPageState extends State<FiqhPage> {
                 width: double.infinity,
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
-                    color: Colors.lightGreenAccent),
+                    color: Colors.brown),
                 child: Center(
                     child: Column(
                   children: [
